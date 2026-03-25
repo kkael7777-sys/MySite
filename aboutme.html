@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="icon" type="image/png" href="assets/FavIcon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">(^///^) Mysite</h2>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="aboutme.html" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="Questionable.html" class="nav-link">?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="about-content">
+                <div class="website-details">
+                    <p id="greeting"></p>
+                    <h1 class="section-title">All About Me Me Me!</h1>
+                    <h3 class="subtitle"><i>Who am I!?!</i></h3>
+
+                    <ol class="space">
+                        <li>Names Katherine Lloyd, turning 20 in a few days</li>
+                        <li>I am a creative person with projects in multiple mediums</li>
+                        <li>I have published books and created sites showcasing my art and music</li>
+                        <li>I am studying computer science with a focus on web development</li>
+                        <li>Most importantly, I really want a good grade on this assignment</li>
+                    </ol>
+
+                    <p id="greeting"></p>
+                    <div class="buttons">
+                        <a href="portfolio.html" class="button">View Portfolio</a>
+                        <a href="mailto:kkael7777@gmail.com" class="button">Contact Me</a>
+                    </div>
+
+                    <button onclick="checkTime()">Check Greeting</button>
+                </div>
+
+                <div class="about-image">
+                    <img src="assets/Pic2.png" alt="Cat" class="cat-image">
+                </div>
+            </div>
+
+            <div class="about-video section-content">
+                <video class="alien-video" src="assets/about-me-vid.mp4" controls autoplay muted loop></video>
+            </div>
+        </section>
+    </main>
+
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">Top</button>
+
+    <footer class="site-banner">
+        <div class="banner-content section-content">
+            <audio id="bg-music" src="assets/Audiooo/In_the_Galaxy.mp3" autoplay loop controls></audio>
+        </div>
+
+        <img src="assets/Banner.png" alt="Site banner" class="banner-image">
+
+        <div class="theme-buttons">
+            <button onclick="setTheme('theme1')">Theme 1</button>
+            <button onclick="setTheme('theme2')">Theme 2</button>
+            <button onclick="setTheme('theme3')">Theme 3</button>
+        </div>
+
+        <div class="footer-content section-content">
+            <p>&copy; 2024 Katherine Lloyd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
