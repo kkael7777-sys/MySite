@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="icon" type="image/png" href="assets/FavIcon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="notification-toast" class="toast" aria-live="polite" aria-atomic="true"></div>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">(^///^) Mysite</h2>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="aboutme.html" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="Questionable.html" class="nav-link">?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="about-content">
+                <div class="website-details">
+                    <h1 class="section-title">About Mysite!</h1>
+                    <h3 class="subtitle"><i>What's the point of this site!?!</i></h3>
+
+                    <p class="description">
+                        Well~... As a creative person and a person who wants to enter the creative industry;
+                        This Website is about showcasing my work and sharing my passion for creativity.
+                        This website contains my portfolio of art, and works I've made or collaborated on in the past years.
+                    </p>
+
+                    <p>P.s: Hit the audio file for a sweet song~</p>
+
+                    <div class="buttons">
+                        <a href="portfolio.html" class="button">View Portfolio</a>
+                        <a href="mailto:kkael7777@gmail.com" class="button">Contact Me</a>
+                    </div>
+
+                    <button onclick="showNotification()">A Secret?</button>
+                </div>
+
+                <div class="about-image">
+                    <img src="assets/Pic1.png" alt="Cat" class="cat-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">Top</button>
+
+    <footer class="site-banner">
+        <div class="banner-content section-content">
+            <audio id="bg-music" src="assets/Audiooo/In_the_Galaxy.mp3" autoplay loop controls></audio>
+        </div>
+
+        <img src="assets/Banner.png" alt="Site banner" class="banner-image">
+
+        <div class="theme-buttons">
+            <button onclick="setTheme('theme1')">Theme 1</button>
+            <button onclick="setTheme('theme2')">Theme 2</button>
+            <button onclick="setTheme('theme3')">Theme 3</button>
+        </div>
+
+        <div class="footer-content section-content">
+            <p>&copy; 2024 Katherine Lloyd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
